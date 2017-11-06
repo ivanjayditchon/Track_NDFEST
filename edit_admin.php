@@ -117,8 +117,8 @@ if(isset($_POST['update'])) {
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/admincss.css"/>
 	<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 	<script src="bootstrap/js/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <link rel="icon" type="image/png" href="private_image/track.png">
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <link rel="icon" type="image/png" href="private_image/track.png">
 </head>
 <body>
 	<div class="container-fluid display-table">
