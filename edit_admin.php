@@ -12,26 +12,26 @@ $qry 	  	= mysqli_query($con, $sql);
 $num_rows 	= mysqli_num_rows($qry);
 $row 	  	= mysqli_fetch_array($qry);
 $firstname 	= $row['admin_firstname'];
-$middlename = $row['admin_middlename'];
+$middlename     = $row['admin_middlename'];
 $lastname 	= $row['admin_lastname'];
 $gender 	= $row['admin_gender'];
-$year_level = $row['admin_year_level'];
+$year_level     = $row['admin_year_level'];
 $college 	= $row['admin_college'];
 $age 		= $row['admin_age'];
-$mobile_num = $row['admin_mobilenumber'];
+$mobile_num     = $row['admin_mobilenumber'];
 $address 	= $row['admin_address'];
 $old_image 	= $row['admin_image'];
 
 if(isset($_POST['update'])) {
 
 	$firstname 	= $_POST['firstname'];
-	$middlename = $_POST['middlename'];
+	$middlename     = $_POST['middlename'];
 	$lastname 	= $_POST['lastname'];
 	$age 		= $_POST['age'];
 	$gender 	= $_POST['gender'];
-	$mobile_num = $_POST['mobile'];
+	$mobile_num     = $_POST['mobile'];
 	$address 	= $_POST['address'];
-	$year_level = $_POST['year-level'];
+	$year_level     = $_POST['year-level'];
 	$college 	= $_POST['college'];
 
 	//Image Validation
