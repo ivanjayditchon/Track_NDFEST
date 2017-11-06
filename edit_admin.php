@@ -43,7 +43,7 @@ if(isset($_POST['update'])) {
 
 	//Validation
     $mobileValidation = "/^[0-9]+$/";
-    $ageValidation 	  = "/^[0-9]+$/";
+    $ageValidation    = "/^[0-9]+$/";
 
 
 	if(empty($firstname) || empty($lastname) || empty($middlename) || empty($age) || empty($gender) || empty($mobile_num) || empty($address)) {
