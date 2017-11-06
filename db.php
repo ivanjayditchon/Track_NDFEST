@@ -1,9 +1,9 @@
 <?php 
 
 $server_name     = "localhost";
-$username 		 = "root";
-$password 		 = ""; //Optional
-$db_name  		 = "ndfest";
+$username 	 = "root";
+$password        = ""; //Optional
+$db_name         = "ndfest";
 
 $con = mysqli_connect($server_name, $username, $password, $db_name); //Create Connection
 
