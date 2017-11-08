@@ -110,8 +110,8 @@ if(isset($_POST['register'])) {
 	<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 	<link rel="icon" type="image/png" href="private_image/track.png">
 	<script src="js/jquery2.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    	<script src="js/jquery-ui.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container-fluid">
@@ -120,9 +120,9 @@ if(isset($_POST['register'])) {
 		<br>
 		<?php if(isset($_SESSION['msg'])) {
 
-					echo $_SESSION['msg'];
+			echo $_SESSION['msg'];
 
-				} ?>
+			} ?>
 		<form action="#" method="post" enctype="multipart/form-data">
 			<div class="panel" style="border: 1px solid #1ab394; margin-top: 20px;">
 				<div class="panel-heading" style="background-color: #1ab394; color: #fff">SignUp</div>
