@@ -8,16 +8,16 @@ $_SESSION['msg'] = '';
 if(isset($_POST['register'])) {
 
 	$firstname 	= mysqli_real_escape_string($con, $_POST['firstname']);
-	$middlename = mysqli_real_escape_string($con, $_POST['middlename']);
+	$middlename 	= mysqli_real_escape_string($con, $_POST['middlename']);
 	$lastname 	= mysqli_real_escape_string($con, $_POST['lastname']);
 	$age 		= mysqli_real_escape_string($con, $_POST['age']);
 	@$gender 	= mysqli_real_escape_string($con, $_POST['gender']);
 	$email 		= mysqli_real_escape_string($con, $_POST['email']);
 	$password 	= mysqli_real_escape_string($con, $_POST['password']);
-	$c_password = mysqli_real_escape_string($con, $_POST['c_password']);
-	$mobile_num = mysqli_real_escape_string($con, $_POST['mobile']);
+	$c_password 	= mysqli_real_escape_string($con, $_POST['c_password']);
+	$mobile_num 	= mysqli_real_escape_string($con, $_POST['mobile']);
 	$address 	= mysqli_real_escape_string($con, $_POST['address']);
-	$acc_type   = "user";
+	$acc_type   	= "user";
 
 	//Image Validation
 	$file_tmp  = $_FILES['image']['tmp_name'];
@@ -28,12 +28,12 @@ if(isset($_POST['register'])) {
 
 	//Validation
 	$emailValidation  = "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9]+(\.[a-z]{2,4})$/";
-    $mobileValidation = "/^[0-9]+$/";
-    $ageValidation 	  = "/^[0-9]+$/";
+    	$mobileValidation = "/^[0-9]+$/";
+    	$ageValidation 	  = "/^[0-9]+$/";
 
-    $sql = "SELECT * FROM account WHERE acc_email = '{$email}'";
-    $qry = mysqli_query($con, $sql);
-    $check_email = mysqli_num_rows($qry);
+    	$sql = "SELECT * FROM account WHERE acc_email = '{$email}'";
+    	$qry = mysqli_query($con, $sql);
+    	$check_email = mysqli_num_rows($qry);
 
 
 	if(empty($firstname) || empty($lastname) || empty($middlename) || empty($age) || empty($gender) || empty($email) || empty($password) || empty($c_password) || empty($mobile_num) || empty($address)) {
